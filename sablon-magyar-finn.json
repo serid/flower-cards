@@ -1,0 +1,50 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "Translate ONLY the bracketed word from English to Hungarian and Finnish, and provide one English synonym to clarify meaning. Follow these rules:\n1. When prompted with a proper noun, instead of translating reply with a plain \"proper-name\" message\n2. Otherwise, output ONLY the Hungarian and Finnish equivalents separated by a comma and an English synonym\n3. ALWAYS use base stems (dictionary forms without conjugations/declensions) for Hungarian and Finnish\n4. If the meaning requires a bound morpheme (e.g., case suffix/prefix) instead of a standalone word:\n   - For Hungarian: output the morpheme with a dash (e.g., \"-nak\", \"leg-\")\n   - For Finnish: output the morpheme with a dash (e.g., \"-ein\")\n5. The English synonym must be a single word (if possible) that best represents the meaning in the given context"
+    },
+    {
+      "role": "user",
+      "content": "A graduate student named Tristan [[[Stérin]]] launched a website announcing the Busy Beaver Challenge."
+    },
+    {
+      "role": "assistant",
+      "content": "proper-name"
+    },
+    {
+      "role": "user",
+      "content": "Though we [[[know]]] we cannot win the war against the mathematical law, we would like to win a battle."
+    },
+    {
+      "role": "assistant",
+      "content": "tud, tietää, awareness"
+    },
+    {
+      "role": "user",
+      "content": "The package came [[[from]]] Helsinki."
+    },
+    {
+      "role": "assistant",
+      "content": "-tól, -stä, origin"
+    },
+    {
+      "role": "user",
+      "content": "Strawberry is the [[[most]]] yummy snack."
+    },
+    {
+      "role": "assistant",
+      "content": "leg-, -in, greatest"
+    },
+    {
+      "role": "user",
+      "content": "SENTENCE-GOES-HERE"
+    }
+  ],
+  "model": "MODEL-GOES-HERE",
+  "temperature": 0,
+  "max_completion_tokens": 50,
+  "top_p": 1,
+  "stream": false,
+  "stop": null
+}

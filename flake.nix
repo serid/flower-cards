@@ -1,0 +1,15 @@
+{
+	nixConfig.bash-prompt-suffix = "dev$ ";
+
+	inputs = {
+		nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+	};
+
+	outputs = { self, nixpkgs }:
+		let pkgs = nixpkgs.legacyPackages.x86_64-linux; in {
+			devShell.x86_64-linux = pkgs.mkShell {
+				LD_LIBRARY_PATH = pkgs.openssl.out + "/lib/";
+				packages = [ pkgs.rakudo pkgs.zef ];
+			};
+		};
+}

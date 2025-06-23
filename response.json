@@ -1,0 +1,31 @@
+{
+	"id":"chatcmpl-6daf4dc9-bcc6-42e0-90b6-532a394e8f9a",
+	"object":"chat.completion",
+	"created":1750273259,
+	"model":"llama-3.1-8b-instant",
+	"choices":[
+		{
+			"index":0,
+			"message":{
+				"role":"assistant",
+				"content":"Just a single letter. Is there something I can help you with or would you like to add more context?"
+			},
+			"logprobs":null,
+			"finish_reason":"stop"
+		}
+	],
+	"usage":{
+		"queue_time":0.005660181,
+		"prompt_tokens":36,
+		"prompt_time":0.001711209,
+		"completion_tokens":23,
+		"completion_time":0.044318558,
+		"total_tokens":59,
+		"total_time":0.046029767
+	},
+	"usage_breakdown":null,
+	"system_fingerprint":"fp_510c177af0",
+	"x_groq":{
+		"id":"req_01jy26mxt5e3ps3g5a4cexreng"
+	}
+}
