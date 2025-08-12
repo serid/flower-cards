@@ -1,1 +1,3 @@
-/build/
+/article*
+/pkgs.txt
+/groq-key.txt

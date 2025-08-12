@@ -6,7 +6,15 @@ curl "https://api.groq.com/openai/v1/chat/completions" \
          "messages": [
            {
              "role": "user",
-             "content": "Read this sentence and translate the word in braces to Hungarian. Do NOT format or explain your answer, just reply with a single noun or noun phrase.\n\"Doge is the most [[[beautiful]]] gift from God.\""
+             "content": "Translate ONLY the bracketed word in a given sentence to Hungarian. Output ONLY the Hungarian equivalent.\nSentence: \"Doge is the most [[[beautiful]]] gift.\""
+           },
+           {
+             "role": "assistant",
+             "content": "legszebb"
+           },
+           {
+             "role": "user",
+             "content": "Sentence: \"I [[[study]]] at the library.\""
            }
          ],
          "model": "gemma2-9b-it",

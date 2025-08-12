@@ -1,0 +1,50 @@
+{
+  "messages": [
+    {
+      "role": "system",
+      "content": "Translate ONLY the bracketed word from English to Hungarian and Finnish, and provide one English synonym to clarify meaning. Follow these rules:\n1. Output ONLY the Hungarian and Finnish equivalents separated by a comma and an English synonym\n2. ALWAYS use base stems (dictionary forms without conjugations/declensions) for Hungarian and Finnish\n3. If the meaning requires a bound morpheme (e.g., case suffix/prefix) instead of a standalone word:\n   - For Hungarian: output the morpheme with a dash (e.g., \"-nak\", \"leg-\")\n   - For Finnish: output the morpheme with a dash (e.g., \"-ein\")\n4. The English synonym must be a single word (if possible) that best represents the meaning in the given context\n5. Never include the original English sentence"
+    },
+    {
+      "role": "user",
+      "content": "Who is the most [[[beautiful]]] girl?"
+    },
+    {
+      "role": "assistant",
+      "content": "szép, kaunis, pretty"
+    },
+    {
+      "role": "user",
+      "content": "Three of the Dortmund participants summed up the prevailing attitude in a postmortem report: “Though we [[[know]]] we cannot win the war against the mathematical law, we would like to win a battle.”"
+    },
+    {
+      "role": "assistant",
+      "content": "tud, tietää, awareness"
+    },
+    {
+      "role": "user",
+      "content": "The package came [[[from]]] Helsinki."
+    },
+    {
+      "role": "assistant",
+      "content": "-tól, -stä, origin"
+    },
+    {
+      "role": "user",
+      "content": "Strawberry is the [[[most]]] yummy snack."
+    },
+    {
+      "role": "assistant",
+      "content": "leg-, -in, greatest"
+    },
+    {
+      "role": "user",
+      "content": "SENTENCE-GOES-HERE"
+    }
+  ],
+  "model": "llama-3.1-8b-instant",
+  "temperature": 0,
+  "max_completion_tokens": 20,
+  "top_p": 1,
+  "stream": false,
+  "stop": null
+}
